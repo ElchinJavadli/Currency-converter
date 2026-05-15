@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo"><img src="images/logo.png" alt="Logo"></a>
+        <ul class="nav-links">
+            <li><a href="#">BANK</a></li>
+            <li><a href="#">BİZNES</a></li>
+            <li><a href="#">FƏRDİ</a></li>
+            <li><a href="#">KART</a></li>
+            <li><a href="#">ONLİNE</a></li>
+            <li><a href="#">MÜRACİƏT</a></li>
+            <li><a href="#">HAQQIMIZDA</a></li>
+        </ul>
+        <div class="login">LOGIN</div>
+    </nav>
+
+    <main>
+        <h1>Valyuta dəyişdir</h1>
+
+        <div class="converter-grid">
+            <div class="col-from">
+                <div class="section-label">Daxil et/Dəyiş</div>
+
+                <div class="tabs" id="fromTabs">
+                    <button class="tab active">RUB</button>
+                    <button class="tab">USD</button>
+                    <button class="tab">EUR</button>
+                    <button class="tab">GBP</button>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" id="fromInput" value="5000">
+                    <div class="rate-info" id="fromInfo"></div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-to">
+                <div class="section-label">Daxil et/Dəyiş</div>
+
+                <div class="tabs" id="toTabs">
+                    <button class="tab">RUB</button>
+                    <button class="tab active">USD</button>
+                    <button class="tab">EUR</button>
+                    <button class="tab">GBP</button>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" id="toInput" value="67.6685">
+                    <div class="rate-info" id="toInfo"></div>
+                </div>
+            </div>
+
+            
+
+            <div class="right-panel">
+
+                <div class="section-label">Hansı bank?</div>
+
+                <div class="bank-tabs">
+                    <button class="bank-tab">ABC</button>
+                    <button class="bank-tab active">NEW</button>
+                    <button class="bank-tab">AME</button>
+                    <button class="bank-tab">RED</button>
+                </div>
+
+                <div class="rate-card">
+                    <div class="rate-badge">BUY</div>
+                    <div class="rate-value" id="buyRate">66.15</div>
+                </div>
+
+                <div class="rate-card">
+                    <div class="rate-badge">SELL</div>
+                    <div class="rate-value" id="sellRate">67.83</div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
